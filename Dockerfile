@@ -11,5 +11,6 @@ RUN cd /usr/src \
 
 RUN mkdir /app
 COPY direwolf.sh /app/direwolf.sh
+RUN chmod +x /app/direwolf.sh
 
 ENTRYPOINT ["/app/direwolf.sh"]
